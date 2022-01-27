@@ -1,0 +1,55 @@
+.card {
+    display: grid;
+    grid-template-columns: 0.5fr 4fr 1fr 2fr;
+    gap: 0.5rem;
+    border: 1px solid darkblue;
+    background-color: rgb(228, 250, 228);
+    margin: 2rem;
+    transition: all 200ms;
+  }
+  .card:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+  .container-body {
+    margin-top: 1rem;
+  }
+  .add-task-btn {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .input-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+  }
+  @media screen and (max-width: 1028px) {
+    .input-box {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card {
+      grid-template-columns: 0.5fr 4fr 1fr 1fr;
+    }
+  }
+  @media screen and (max-width: 790px) {
+    .input-box {
+      grid-template-columns: 1fr 1fr;
+    }
+    .card {
+      grid-template-columns: 0.5fr 4fr;
+    }
+  }
+  @media screen and (max-width: 540px) {
+    .input-box {
+      grid-template-columns: 1fr;
+    }
+    .card {
+      grid-template-columns: 0.5fr 4fr;
+    }
+  }
+  @media screen and (max-width: 460px) {
+    .card {
+      grid-template-columns: 1fr;
+    }
+  }
